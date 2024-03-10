@@ -58,6 +58,7 @@ export class AppComponent {
     this.user.gender =formData.gender;
 
 
+    this.signupForm.reset();
   }
 
   // isFormInvalid(){
