@@ -16,8 +16,12 @@ export class AppComponent {
   // onSubmit(form:NgForm){
   //   console.log(`Vihngaaaaaaaaaaaaaaaa`,form)
   // }
-  
+
   onSubmit(){
     console.log(`Vihngaaaaaaaaaaaaaaaa`,this.signupForm.valid);
   }
+
+  // isFormInvalid(){
+  //   return this.signupForm.invalid;
+  // }
 }
