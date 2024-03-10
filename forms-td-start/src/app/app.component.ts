@@ -9,6 +9,9 @@ import { NgForm } from '@angular/forms';
 export class AppComponent {
   @ViewChild('f') signupForm:NgForm;
 
+  defaultQuestion = 'pet';
+  answer='';
+
   suggestUserName() {
     const suggestedName = 'Superuser';
   }
@@ -19,6 +22,8 @@ export class AppComponent {
 
   onSubmit(){
     console.log(`Vihngaaaaaaaaaaaaaaaa`,this.signupForm.valid);
+    console.log(`this.signupForm`,this.signupForm);
+
   }
 
   // isFormInvalid(){
