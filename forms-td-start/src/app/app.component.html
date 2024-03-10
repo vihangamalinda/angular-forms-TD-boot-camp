@@ -76,6 +76,15 @@
         [disabled]="f.invalid"
         >Submit</button>
       </form>
+      <hr>
+      <div class="col-xs-12" *ngIf="isFormSubmited">
+        <h3>Your data</h3>
+        <p>UserName: {{user.username}}</p>
+        <p>Mail: {{user.email}}</p>
+        <p>Secrete Question: Your first {{user.secreteQuestion}} ?</p>
+        <p>Answer: {{user.answer}}</p>
+        <p>Gender: {{user.gender}}</p>
+      </div>
     </div>
   </div>
 </div>
